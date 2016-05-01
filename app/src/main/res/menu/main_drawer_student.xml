@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bookList"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="Books"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_borrowedList"
+            android:icon="@drawable/ic_book_borrowed_24dp"
+            android:title="Borrowed books" />
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_change_password"
+                android:icon="@drawable/ic_settings"
+                android:title="Change password" />
+            <item
+                android:id="@+id/nav_log_out"
+                android:title="Log out" />
+        </menu>
+    </item>
+</menu>

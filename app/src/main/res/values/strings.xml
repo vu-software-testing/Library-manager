@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">libraryManager</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="toolbar_title_login">Login</string>
+    <string name="toolbar_title_adduser">Add user</string>
+    <string name="toolbar_title_addbook">Add book</string>
+
+    <string name="search">Search</string>
+
+    <string name="vunetid_error_message">VUnetID cannot be empty</string>
+    <string name="password_error_message">Password cannot be empty</string>
+    <string name="login_failed_message">Wrong VuNetId or password</string>
+    <string name="add_book_success_message">Book added</string>
+    <string name="add_book_failed_message">Add book failed</string>
+    <string name="password_confirm_error_message">Password and confirmation not the same</string>
+    <string name="add_user_success_message">User added</string>
+    <string name="add_user_failed_message">Add user failed</string>
+    <string name="update_book_success_message">Book updated</string>
+    <string name="no_change_made_message">No change made</string>
+    <string name="update_book_failed_message">Update book failed</string>
+    <string name="title_error_message">Title cannot be empty</string>
+    <string name="author_error_message">Author cannot be empty</string>
+    <string name="isbn_error_message">ISBN cannot be empty</string>
+    <string name="deleted_message">Deleted</string>
+    <string name="delete_failed_message">Delete failed</string>
+    <string name="delete_book_dialog_title">Delete this book</string>
+    <string name="delete_dialog_message">Are you sure?</string>
+    <string name="dialog_positive">Yes</string>
+    <string name="dialog_negative">No</string>
+    <string name="borrowed_message">Borrowed</string>
+    <string name="borrow_failed_message">Borrow failed</string>
+    <string name="returned_message">Returned</string>
+    <string name="return_failed_message">Return failed</string>
+    <string name="book_status_borrowed">Borrowed</string>
+    <string name="book_status_available">Available</string>
+    <string name="delete_user_dialog_title">Delete this user</string>
+    <string name="update_user_success_message">User updated</string>
+    <string name="update_user_failed_message">Update user failed</string>
+    <string name="fullname_error_message">Name cannot be empty</string>
+    <string name="faculty_error_message">Faculty cannot be empty</string>
+    <string name="books_toolbar_title">Books</string>
+    <string name="set_password_success_message">Password updated</string>
+    <string name="set_password_failed_message">Password update failed</string>
+    <string name="admin_account_initialized_message">Admin account initialized</string>
+    <string name="password_incorrect_message">Password is incorrect</string>
+    <string name="toolbar_title_bookdetail">Book detail</string>
+    <string name="toolbar_title_userdetail">User detail</string>
+    <string name="toolbar_title_users">Users</string>
+    <string name="toolbar_title_books">Books</string>
+    <string name="toolbar_title_borrowed_books">Books borrowed by</string>
+    <string name="search_hint">Search books</string>
+    <string name="toolbar_title_searchresult">Search Result</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="thumbnail_description">Thumbnail of the book</string>
+    <string name="title">Title</string>
+    <string name="author">Author</string>
+    <string name="isbn">ISBN</string>
+    <string name="status">Status</string>
+    <string name="borrower">Borrower</string>
+    <string name="borrow_book">Borrow book</string>
+    <string name="return_book">Return book</string>
+    <string name="edit_book">Edit book</string>
+    <string name="delete_book">Delete book</string>
+    <string name="edit_image">Edit image</string>
+    <string name="submit">Submit</string>
+    <string name="add_image">Add image</string>
+    <string name="library_manager">Library manager</string>
+    <string name="username_empty_error_message">Username cannot be empty</string>
+    <string name="delete_book_failed_borrowing">Delete failed, there are book(s) borrowed by this user.</string>
+
+</resources>

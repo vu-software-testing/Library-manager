@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cl_coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_thumbnail"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/book"
+                android:contentDescription="@string/thumbnail_description"
+                android:scaleType="fitCenter" />
+
+            <ViewAnimator
+                android:id="@+id/va_animator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_staticView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:text="@string/title" />
+
+                    <TextView
+                        android:id="@+id/tv_bookDetail_title"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:padding="9dp"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/author" />
+
+                    <TextView
+                        android:id="@+id/tv_bookDetail_author"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:padding="9dp"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/isbn" />
+
+                    <TextView
+                        android:id="@+id/tv_bookDetail_isbn"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:padding="9dp"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/status" />
+
+                    <TextView
+                        android:id="@+id/tv_bookDetail_status"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:padding="9dp"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/tv_bookDetail_borrowerLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/borrower" />
+
+                    <TextView
+                        android:id="@+id/tv_bookDetail_borrower"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:padding="9dp"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <Button
+                        android:id="@+id/btn_borrow"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/borrow_book"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_return"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/return_book"
+                        android:visibility="gone" />
+
+
+                    <Button
+                        android:id="@+id/btn_edit"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/edit_book"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_delete"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/delete_book"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_editView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:text="@string/title" />
+
+                    <EditText
+                        android:id="@+id/et_bookDetail_title"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:hint="@string/title"
+                        android:inputType="text"
+                        android:maxLength="30" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/author" />
+
+                    <EditText
+                        android:id="@+id/et_bookDetail_author"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:hint="@string/author"
+                        android:inputType="text"
+                        android:maxLength="30" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/isbn" />
+
+                    <EditText
+                        android:id="@+id/et_bookDetail_isbn"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:hint="@string/isbn"
+                        android:inputType="text"
+                        android:maxLength="30" />
+
+                    <Button
+                        android:id="@+id/btn_saveEdit"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/save" />
+
+                    <Button
+                        android:id="@+id/btn_cancelEdit"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/cancel" />
+
+                </LinearLayout>
+            </ViewAnimator>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

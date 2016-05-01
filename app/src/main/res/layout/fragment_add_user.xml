@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+        <EditText
+            android:id="@+id/et_vunetid"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="VUnetID"
+            android:maxLength="10"/>
+
+        <EditText
+            android:id="@+id/et_fullname"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="text"
+            android:hint="Full Name"
+            android:maxLength="50"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:maxLength="30"/>
+
+        <EditText
+            android:id="@+id/et_passwordConfirm"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"
+            android:maxLength="30"/>
+
+        <EditText
+            android:id="@+id/et_faculty"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="text"
+            android:hint="Faculty"
+            android:maxLength="30"/>
+
+        <CheckBox
+            android:id="@+id/cb_add_as_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add as admin"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Submit" />
+
+</LinearLayout>
+</ScrollView>

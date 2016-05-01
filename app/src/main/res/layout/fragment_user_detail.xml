@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ViewAnimator
+            android:id="@+id/va_animator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_staticView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:text="Vunet Id" />
+
+                <TextView
+                    android:id="@+id/tv_vunetid"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:padding="9dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Full Name" />
+
+                <TextView
+                    android:id="@+id/tv_fullname"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:padding="9dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Faculty" />
+
+                <TextView
+                    android:id="@+id/tv_faculty"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:padding="9dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <CheckBox
+                    android:id="@+id/cb_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:text="Admin"
+                    android:clickable="false"/>
+
+                <Button
+                    android:id="@+id/btn_borrowed"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Borrowed books" />
+
+                <Button
+                    android:id="@+id/btn_edit"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Edit user" />
+
+                <Button
+                    android:id="@+id/btn_delete"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Delete user" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_editView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:text="Vunet Id"
+                    android:labelFor="@id/et_vunetid" />
+
+                <TextView
+                    android:id="@+id/et_vunetid"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:padding="9dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Full Name"
+                    android:labelFor="@id/et_fullname" />
+
+                <EditText
+                    android:id="@+id/et_fullname"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:inputType="text"
+                    android:maxLength="50" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Faculty"
+                    android:labelFor="@id/et_faculty"/>
+
+                <EditText
+                    android:id="@+id/et_faculty"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:inputType="text"
+                    android:maxLength="30"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Password"
+                    android:labelFor="@id/et_password" />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:inputType="textPassword"
+                    android:maxLength="20"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Confirm password"
+                    android:labelFor="@id/et_password"/>
+
+                <EditText
+                    android:id="@+id/et_confirmPassword"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:inputType="textPassword"
+                    android:maxLength="20"/>
+
+                <Button
+                    android:id="@+id/btn_saveEdit"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Save" />
+
+                <Button
+                    android:id="@+id/btn_cancelEdit"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Cancel" />
+
+            </LinearLayout>
+        </ViewAnimator>
+
+</ScrollView>
